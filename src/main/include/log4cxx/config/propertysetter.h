@@ -21,15 +21,13 @@
 #include <log4cxx/logstring.h>
 #include <log4cxx/helpers/object.h>
 
+// Instantiate template pointer type passed as parameter
+LOG4CXX_INSTANTIATE_EXPORTED_PTR(LOG4CXX_NS::helpers::Object);
+
 namespace LOG4CXX_NS
 {
 namespace helpers
 {
-class Object;
-// Instantiate template pointer type passed as parameter
-LOG4CXX_INSTANTIATE_EXPORTED_PTR(Object);
-LOG4CXX_PTR_DEF(Object);
-
 class Properties;
 class Pool;
 }
